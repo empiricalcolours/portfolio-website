@@ -17,7 +17,12 @@ const Navbar: React.FC = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
-  const navItems = ['Home', 'My Art', 'Contact'];
+  // Label and target id
+  const navItems = [
+    { label: 'Home', targetId: 'home' },
+    { label: 'My Art', targetId: 'art' },
+    { label: 'Contact', targetId: 'contact' },
+  ];
 
   const handleMenuClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -25,6 +30,14 @@ const Navbar: React.FC = () => {
 
   const handleClose = () => {
     setAnchorEl(null);
+  };
+
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    handleClose();
   };
 
   return (
@@ -55,8 +68,11 @@ const Navbar: React.FC = () => {
               onClose={handleClose}
             >
               {navItems.map((item) => (
-                <MenuItem key={item} onClick={handleClose}>
-                  {item}
+                <MenuItem
+                  key={item.label}
+                  onClick={() => handleScroll(item.targetId)}
+                >
+                  {item.label}
                 </MenuItem>
               ))}
             </Menu>
@@ -64,7 +80,8 @@ const Navbar: React.FC = () => {
         ) : (
           navItems.map((item) => (
             <Button
-              key={item}
+              key={item.label}
+              onClick={() => handleScroll(item.targetId)}
               sx={{
                 color: 'black',
                 mx: 1,
@@ -73,7 +90,7 @@ const Navbar: React.FC = () => {
                 },
               }}
             >
-              {item}
+              {item.label}
             </Button>
           ))
         )}

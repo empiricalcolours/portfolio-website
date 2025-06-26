@@ -14,14 +14,19 @@ const App: React.FC = () => {
     <>
       <CssBaseline />
       <Navbar />
-      <Box component="main" sx={{ flexGrow: 1 }}>
-        <Slideshow />
+      <Box component="main" id="home" sx={{ flexGrow: 1 }}>
+      <Slideshow />
       </Box>
       <Announcements />
+      <Box id="art">
       <ArtShowcase />
+      </Box>
       <AboutMe />
+      <Box id="contact">
       <Contact />
+      </Box>
       <Footer />
+
     </>
   );
 };
