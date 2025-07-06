@@ -5,10 +5,10 @@
 
 // modify below to change content that appears in About Me section
 export const aboutMeData = {
-  name: 'John Doe',
+  name: 'Rudrani Warad',
   description: "and I'm stupid.",
   email: 'johndoe@example.com',
-  instagramHandle: '@meowmeowmewo',
+  instagramHandle: '@empiricalcolours',
   instagramUrl: 'https://instagram.com/usa',
 };
 
