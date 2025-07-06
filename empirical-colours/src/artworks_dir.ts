@@ -5,7 +5,7 @@
 
 // modify below to change content that appears in About Me section
 export const aboutMeData = {
-  name: 'Rudrani Warad',
+  name: 'Rudrani',
   description: "and I'm stupid.",
   email: 'johndoe@example.com',
   instagramHandle: '@empiricalcolours',
