@@ -9,7 +9,7 @@ export const aboutMeData = {
   description: "and I'm stupid.",
   email: 'johndoe@example.com',
   instagramHandle: '@empiricalcolours',
-  instagramUrl: 'https://instagram.com/usa',
+  instagramUrl: 'https://instagram.com/empiricalcolours',
 };
 
 interface Announcement {
