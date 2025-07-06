@@ -46,11 +46,16 @@ export const MyAnnouncements: Announcement[] = [
 // but all images/ images folders should be in the folder named "public"
 // You can add subcategory as well, I have sketching, digital, watercolours here for example. 
 export const artworks: Record<string, { src: string; title: string; description: string }[]> = {
-  sketching: [
+  acrylics: [
     { 
       src: '/placeholders/1.jpg', 
       title: 'Graphite Gaze', 
       description: 'A hand-drawn portrait in pencil.' 
+    },
+     { 
+      src: '/placeholders/a.jpg', 
+      title: 'Golden Sunset', 
+      description: 'Acrylics on Canvas.' 
     },
     { 
       src: '/placeholders/2.jpg', 
@@ -71,12 +76,24 @@ export const artworks: Record<string, { src: string; title: string; description:
   ],
   watercolors: [
     { 
-      src: '/placeholders/1.jpg', 
-      title: 'Ocean Breeze', 
-      description: 'Soft strokes of a seascape.' 
+      src: '/placeholders/b.jpg', 
+      title: 'Cat in a starry night', 
+      description: 'Inspired by Van Gogh.' 
     },
     { 
-      src: '/placeholders/2.jpg', 
+      src: '/placeholders/c.jpg', 
+      title: 'Autumn Leaves', 
+      description: 'Watercolor impression of fall.' 
+    },
+  ],
+  Charcoal: [
+    { 
+      src: '/placeholders/b.jpg', 
+      title: 'Cat in a starry night', 
+      description: 'Inspired by Van Gogh.' 
+    },
+    { 
+      src: '/placeholders/c.jpg', 
       title: 'Autumn Leaves', 
       description: 'Watercolor impression of fall.' 
     },
@@ -87,6 +104,8 @@ export const artworks: Record<string, { src: string; title: string; description:
 // same as the art showcase, upload the images in "public" folder or a folder inside public folder
 // and update the file names below.
 export const slideshow_images = [
+  '/placeholders/a.jpg',
+  '/placeholders/b.jpg',
   '/placeholders/1.jpg',
   '/placeholders/2.jpg',
 ];
