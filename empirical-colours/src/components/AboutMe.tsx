@@ -27,27 +27,27 @@ const AboutMe: React.FC = () => {
           backgroundColor: 'white',
         }}
       >
-        <Typography variant="h4" gutterBottom sx={{ fontWeight: 600 }}>
+        <Typography variant="h4" gutterBottom sx={{ fontWeight: 400, fontFamily: 'Comic Neue, cursive' }}>
           About Me
         </Typography>
 
-        <Typography variant="h6" gutterBottom>
+        <Typography variant="h6" gutterBottom sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300 }}>
           {name}
         </Typography>
 
-        <Typography variant="body1" gutterBottom>
+        <Typography variant="body1" gutterBottom sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300 }}>
           {description}
         </Typography>
 
         <Box sx={{ mt: 3 }}>
-          <Typography variant="subtitle1" sx={{ fontWeight: 500 }}>
+          <Typography variant="subtitle1" sx={{ fontWeight: 300, fontFamily: 'Comic Neue, cursive' }}>
             Email:
           </Typography>
-          <Typography variant="body2" gutterBottom>
+          <Typography variant="body2" gutterBottom sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300 }}>
             {email}
           </Typography>
 
-          <Typography variant="subtitle1" sx={{ fontWeight: 500 }}>
+          <Typography variant="subtitle1" sx={{ fontWeight: 300, fontFamily: 'Comic Neue, cursive' }}>
             Instagram:
           </Typography>
           <Link
@@ -55,6 +55,7 @@ const AboutMe: React.FC = () => {
             target="_blank"
             rel="noopener"
             underline="hover"
+            sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300 }}
           >
             {instagramHandle}
           </Link>
