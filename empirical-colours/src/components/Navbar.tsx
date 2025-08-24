@@ -47,13 +47,13 @@ const Navbar: React.FC = () => {
     <AppBar
       position="static"
       sx={{
-        backgroundColor: 'white',
-        color: 'black',
+        backgroundColor: '#2A3650',
+        color: 'white',
         boxShadow: 'none',
       }}
     >
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1, fontFamily: 'Mulegh' }}>
+        <Typography variant="h6" sx={{ flexGrow: 1, fontFamily: 'Mulegh', color: 'white' }}>
           Empirical Colours
         </Typography>
         {isMobile ? (
@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
             <IconButton
               edge="end"
               onClick={handleMenuClick}
-              sx={{ color: 'black' }}
+              sx={{ color: 'white' }}
             >
               <MenuIcon />
             </IconButton>
@@ -86,11 +86,11 @@ const Navbar: React.FC = () => {
               key={item.label}
               onClick={() => handleScroll(item.targetId)}
               sx={{
-                color: 'black',
+                color: 'white',
                 mx: 1,
                 fontFamily: 'Comic Neue, cursive',
                 '&:hover': {
-                  backgroundColor: '#f0f0f0',
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
                 },
               }}
             >
