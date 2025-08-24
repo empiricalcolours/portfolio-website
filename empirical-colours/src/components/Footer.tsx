@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography, Container } from '@mui/material';
+import { Box, Typography, Container, Link } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -7,6 +8,11 @@ const Footer: React.FC = () => {
       <Container maxWidth="lg">
         <Typography variant="body2" align="center">
           © {new Date().getFullYear()} Empirical Colours. All rights reserved.
+        </Typography>
+        <Typography variant="body2" align="center" sx={{ mt: 1 }}>
+          <Link component={RouterLink} to="/privacy" color="inherit">
+            Privacy Policy
+          </Link>
         </Typography>
       </Container>
     </Box>

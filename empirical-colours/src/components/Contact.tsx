@@ -63,7 +63,7 @@ const ContactForm: React.FC = () => {
           variant="h5"
           align="center"
           gutterBottom
-          sx={{ fontWeight: 600 }}
+          sx={{ fontWeight: 400, fontFamily: 'Comic Neue, cursive' }}
         >
           Get in Touch
         </Typography>
@@ -75,6 +75,9 @@ const ContactForm: React.FC = () => {
             fullWidth
             required
             sx={{ mb: 2 }}
+            InputLabelProps={{
+              style: { fontFamily: 'Comic Neue, cursive', fontWeight: 300 },
+            }}
           />
           <TextField
             name="email"
@@ -83,6 +86,9 @@ const ContactForm: React.FC = () => {
             fullWidth
             required
             sx={{ mb: 2 }}
+            InputLabelProps={{
+              style: { fontFamily: 'Comic Neue, cursive', fontWeight: 300 },
+            }}
           />
           <TextField
             name="message"
@@ -92,12 +98,15 @@ const ContactForm: React.FC = () => {
             fullWidth
             required
             sx={{ mb: 2 }}
+            InputLabelProps={{
+              style: { fontFamily: 'Comic Neue, cursive', fontWeight: 300 },
+            }}
           />
           <Button
             type="submit"
             variant="contained"
             fullWidth
-            sx={{ py: 1.2, fontWeight: 500 }}
+            sx={{ py: 1.2, fontWeight: 300, fontFamily: 'Comic Neue, cursive' }}
           >
             Send Message
           </Button>
