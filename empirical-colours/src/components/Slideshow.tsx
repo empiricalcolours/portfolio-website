@@ -23,7 +23,7 @@ const Slideshow: React.FC = () => {
   }, []);
 
   return (
-    <Box sx={{ position: 'relative', height: '70vh', width: '100%', overflow: 'hidden' }}>
+    <Box sx={{ position: 'relative', height: '70vh', width: '100%', overflow: 'hidden', border: '10px solid #66768F' }}>
       <Fade in={fadeIn} timeout={1000}>
         <Box
           component="img"
@@ -36,6 +36,7 @@ const Slideshow: React.FC = () => {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
+            borderRadius: '10px',
           }}
         />
       </Fade>

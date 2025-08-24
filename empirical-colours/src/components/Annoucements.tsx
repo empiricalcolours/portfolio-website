@@ -33,40 +33,42 @@ import { MyAnnouncements } from '../artworks_dir';
 
 const Announcements: React.FC = () => {
   return (
-    <Box sx={{ p: 2, maxWidth: 800, margin: '0 auto' }}>
-      <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: 'black', fontFamily: 'Comic Neue, cursive', textTransform: 'uppercase' }}>
-        Announcements
-      </Typography>
+    <Box sx={{ backgroundColor: '#D1B89A', py: 2 }}>
+      <Box sx={{ maxWidth: 800, marginRight: 'auto', paddingLeft: '20px' }}>
+        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: 'black', fontFamily: 'Comic Neue, cursive', textTransform: 'uppercase' }}>
+          Announcements
+        </Typography>
 
-      <Stack spacing={2}>
-        {MyAnnouncements.map((item) => (
-          <Paper
+        <Stack spacing={2}>
+          {MyAnnouncements.map((item) => (
+            <Paper
             key={item.id}
             elevation={0}
             sx={{
               p: 2,
-              backgroundColor: 'white',
-              color: 'black',
+              backgroundColor: '#6B4E3E',
+              color: 'white',
               transition: 'background-color 0.3s ease',
               '&:hover': {
-                backgroundColor: '#f0f0f0',
+                backgroundColor: '#5A3F32',
               },
               borderRadius: 2,
               border: '1px solid #ddd',
             }}
           >
-            <Typography variant="subtitle1" sx={{ fontWeight: 400, fontFamily: 'Comic Neue, cursive' }}>
-              {item.heading}
-            </Typography>
-            <Typography variant="body2" sx={{ mb: 1, fontFamily: 'Comic Neue, cursive', fontWeight: 300 }}>
-              {item.subheading}
-            </Typography>
-            <Typography variant="caption" color="text.secondary">
-              Posted on: {new Date(item.postedOn).toLocaleDateString()}
-            </Typography>
-          </Paper>
-        ))}
-      </Stack>
+              <Typography variant="subtitle1" sx={{ fontWeight: 400, fontFamily: 'Comic Neue, cursive', color: 'white' }}>
+                {item.heading}
+              </Typography>
+              <Typography variant="body2" sx={{ mb: 1, fontFamily: 'Comic Neue, cursive', fontWeight: 300, color: 'white' }}>
+                {item.subheading}
+              </Typography>
+              <Typography variant="caption" sx={{ color: 'white' }}>
+                Posted on: {new Date(item.postedOn).toLocaleDateString()}
+              </Typography>
+            </Paper>
+          ))}
+        </Stack>
+      </Box>
     </Box>
   );
 };

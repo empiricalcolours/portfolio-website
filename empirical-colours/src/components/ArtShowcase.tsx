@@ -71,7 +71,7 @@ const ArtShowcase: React.FC = () => {
   };
 
   return (
-    <Box sx={{ p: 2 }}>
+    <Box sx={{ p: 2, backgroundColor: '#FFEFEF' }}>
       <Tabs
         value={selectedGenre}
         onChange={(_, newValue) => setSelectedGenre(newValue)}
