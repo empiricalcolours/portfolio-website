@@ -41,12 +41,12 @@ const ContactForm: React.FC = () => {
   return (
     <Box
       sx={{
-        minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#f8f9fa',
+        background: 'linear-gradient(to bottom, #66768F 50%, #FFF4E2 50%)',
         p: 2,
+        py: 8,
       }}
     >
       <Paper
@@ -60,10 +60,10 @@ const ContactForm: React.FC = () => {
         }}
       >
         <Typography
-          variant="h5"
+          variant="h4"
           align="center"
           gutterBottom
-          sx={{ fontWeight: 400, fontFamily: 'Comic Neue, cursive' }}
+          sx={{ fontWeight: 400, fontFamily: 'Comic Neue, cursive', color: '#677790' }}
         >
           Get in Touch
         </Typography>
@@ -76,7 +76,20 @@ const ContactForm: React.FC = () => {
             required
             sx={{ mb: 2 }}
             InputLabelProps={{
-              style: { fontFamily: 'Comic Neue, cursive', fontWeight: 300 },
+              style: { fontFamily: 'Comic Neue, cursive', fontWeight: 300, color: '#2A3650' },
+            }}
+            InputProps={{
+              sx: {
+                '& fieldset': {
+                  borderColor: '#6B4E3E',
+                },
+                '&:hover fieldset': {
+                  borderColor: '#6B4E3E', // Keep the same color on hover
+                },
+                '&.Mui-focused fieldset': {
+                  borderColor: '#6B4E3E', // Keep the same color when focused
+                },
+              },
             }}
           />
           <TextField
@@ -87,7 +100,20 @@ const ContactForm: React.FC = () => {
             required
             sx={{ mb: 2 }}
             InputLabelProps={{
-              style: { fontFamily: 'Comic Neue, cursive', fontWeight: 300 },
+              style: { fontFamily: 'Comic Neue, cursive', fontWeight: 300, color: '#2A3650' },
+            }}
+            InputProps={{
+              sx: {
+                '& fieldset': {
+                  borderColor: '#6B4E3E',
+                },
+                '&:hover fieldset': {
+                  borderColor: '#6B4E3E', // Keep the same color on hover
+                },
+                '&.Mui-focused fieldset': {
+                  borderColor: '#6B4E3E', // Keep the same color when focused
+                },
+              },
             }}
           />
           <TextField
@@ -99,14 +125,27 @@ const ContactForm: React.FC = () => {
             required
             sx={{ mb: 2 }}
             InputLabelProps={{
-              style: { fontFamily: 'Comic Neue, cursive', fontWeight: 300 },
+              style: { fontFamily: 'Comic Neue, cursive', fontWeight: 300, color: '#2A3650' },
+            }}
+            InputProps={{
+              sx: {
+                '& fieldset': {
+                  borderColor: '#6B4E3E',
+                },
+                '&:hover fieldset': {
+                  borderColor: '#6B4E3E', // Keep the same color on hover
+                },
+                '&.Mui-focused fieldset': {
+                  borderColor: '#6B4E3E', // Keep the same color when focused
+                },
+              },
             }}
           />
           <Button
             type="submit"
             variant="contained"
             fullWidth
-            sx={{ py: 1.2, fontWeight: 300, fontFamily: 'Comic Neue, cursive' }}
+            sx={{ py: 1.2, fontWeight: 300, fontFamily: 'Comic Neue, cursive', backgroundColor: '#677790', color: 'white' }}
           >
             Send Message
           </Button>

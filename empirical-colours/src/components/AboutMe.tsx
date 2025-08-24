@@ -9,12 +9,12 @@ const AboutMe: React.FC = () => {
     <Box
       id="about-me"
       sx={{
-        minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#f0f0f0',
+        backgroundColor: '#66768F',
         p: 2,
+        py: 8,
       }}
     >
       <Paper
@@ -24,30 +24,30 @@ const AboutMe: React.FC = () => {
           maxWidth: 600,
           width: '100%',
           borderRadius: 3,
-          backgroundColor: 'white',
+          backgroundColor: '#2A3650',
         }}
       >
-        <Typography variant="h4" gutterBottom sx={{ fontWeight: 400, fontFamily: 'Comic Neue, cursive' }}>
+        <Typography variant="h4" gutterBottom sx={{ fontWeight: 400, fontFamily: 'Comic Neue, cursive', color: 'white' }}>
           About Me
         </Typography>
 
-        <Typography variant="h6" gutterBottom sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300 }}>
+        <Typography variant="h6" gutterBottom sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300, color: 'white' }}>
           {name}
         </Typography>
 
-        <Typography variant="body1" gutterBottom sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300 }}>
+        <Typography variant="body1" gutterBottom sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300, color: 'white' }}>
           {description}
         </Typography>
 
         <Box sx={{ mt: 3 }}>
-          <Typography variant="subtitle1" sx={{ fontWeight: 300, fontFamily: 'Comic Neue, cursive' }}>
+          <Typography variant="subtitle1" sx={{ fontWeight: 300, fontFamily: 'Comic Neue, cursive', color: 'white' }}>
             Email:
           </Typography>
-          <Typography variant="body2" gutterBottom sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300 }}>
+          <Typography variant="body2" gutterBottom sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300, color: 'white' }}>
             {email}
           </Typography>
 
-          <Typography variant="subtitle1" sx={{ fontWeight: 300, fontFamily: 'Comic Neue, cursive' }}>
+          <Typography variant="subtitle1" sx={{ fontWeight: 300, fontFamily: 'Comic Neue, cursive', color: 'white' }}>
             Instagram:
           </Typography>
           <Link
@@ -55,7 +55,7 @@ const AboutMe: React.FC = () => {
             target="_blank"
             rel="noopener"
             underline="hover"
-            sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300 }}
+            sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300, color: 'white' }}
           >
             {instagramHandle}
           </Link>
