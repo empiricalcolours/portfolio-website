@@ -11,6 +11,7 @@ import {
   MenuItem,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import '../assets/fonts.css';
 
 const Navbar: React.FC = () => {
   const theme = useTheme();
@@ -21,6 +22,8 @@ const Navbar: React.FC = () => {
   const navItems = [
     { label: 'Home', targetId: 'home' },
     { label: 'My Art', targetId: 'art' },
+    { label: 'About Me', targetId: 'about-me' },
+    { label: 'Blogs', targetId: 'blogs' },
     { label: 'Contact', targetId: 'contact' },
   ];
 
@@ -50,7 +53,7 @@ const Navbar: React.FC = () => {
       }}
     >
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+        <Typography variant="h6" sx={{ flexGrow: 1, fontFamily: 'Mulegh' }}>
           Empirical Colours
         </Typography>
         {isMobile ? (

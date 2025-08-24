@@ -7,6 +7,7 @@ const AboutMe: React.FC = () => {
 
   return (
     <Box
+      id="about-me"
       sx={{
         minHeight: '100vh',
         display: 'flex',
