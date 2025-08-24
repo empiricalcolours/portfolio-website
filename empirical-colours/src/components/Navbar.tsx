@@ -88,6 +88,7 @@ const Navbar: React.FC = () => {
               sx={{
                 color: 'black',
                 mx: 1,
+                fontFamily: 'Comic Neue, cursive',
                 '&:hover': {
                   backgroundColor: '#f0f0f0',
                 },

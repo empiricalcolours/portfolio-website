@@ -80,7 +80,7 @@ const ArtShowcase: React.FC = () => {
         variant="scrollable"
       >
         {genres.map((genre) => (
-          <Tab key={genre} label={genre.charAt(0).toUpperCase() + genre.slice(1)} />
+          <Tab key={genre} label={genre.charAt(0).toUpperCase() + genre.slice(1)} sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 400, textTransform: 'uppercase' }} />
         ))}
       </Tabs>
 

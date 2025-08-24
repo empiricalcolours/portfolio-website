@@ -34,7 +34,7 @@ import { MyAnnouncements } from '../artworks_dir';
 const Announcements: React.FC = () => {
   return (
     <Box sx={{ p: 2, maxWidth: 800, margin: '0 auto' }}>
-      <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: 'black' }}>
+      <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: 'black', fontFamily: 'Comic Neue, cursive', textTransform: 'uppercase' }}>
         Announcements
       </Typography>
 
@@ -55,10 +55,10 @@ const Announcements: React.FC = () => {
               border: '1px solid #ddd',
             }}
           >
-            <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
+            <Typography variant="subtitle1" sx={{ fontWeight: 400, fontFamily: 'Comic Neue, cursive' }}>
               {item.heading}
             </Typography>
-            <Typography variant="body2" sx={{ mb: 1 }}>
+            <Typography variant="body2" sx={{ mb: 1, fontFamily: 'Comic Neue, cursive', fontWeight: 300 }}>
               {item.subheading}
             </Typography>
             <Typography variant="caption" color="text.secondary">
