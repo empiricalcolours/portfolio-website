@@ -35,7 +35,7 @@ const Announcements: React.FC = () => {
   return (
     <Box sx={{ backgroundColor: '#D1B89A', py: 2 }}>
       <Box sx={{ maxWidth: 800, marginRight: 'auto', paddingLeft: '20px' }}>
-        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: 'black', fontFamily: 'Comic Neue, cursive', textTransform: 'uppercase' }}>
+        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: 'black', fontFamily: 'Comic Neue, cursive' }}>
           Announcements
         </Typography>
 
