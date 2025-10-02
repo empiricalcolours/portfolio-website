@@ -33,10 +33,10 @@ import { MyAnnouncements } from '../artworks_dir';
 
 const Announcements: React.FC = () => {
   return (
-    <Box sx={{ backgroundColor: '#D1B89A', py: 2 }}>
+    <Box sx={{ backgroundColor: '#2C2C2C', py: 2 }}>
       <Box sx={{ maxWidth: 800, marginRight: 'auto', paddingLeft: '20px' }}>
-        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: 'black', fontFamily: 'Comic Neue, cursive' }}>
-          Announcements
+        <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold', color: '#F9F5F2', fontFamily: 'Fira Sans, sans-serif' }}>
+          ANNOUNCEMENTS
         </Typography>
 
         <Stack spacing={2}>
@@ -46,23 +46,25 @@ const Announcements: React.FC = () => {
             elevation={0}
             sx={{
               p: 2,
-              backgroundColor: '#6B4E3E',
-              color: 'white',
-              transition: 'background-color 0.3s ease',
+              backgroundColor: '#2C2C2C',
+              color: '#F9F5F2',
+              transition: 'background-color 0.3s ease, color 0.3s ease',
               '&:hover': {
-                backgroundColor: '#5A3F32',
+                backgroundColor: '#F9F5F2',
+                color: '#2C2C2C',
+                '* ': { color: '#2C2C2C' }
               },
               borderRadius: 2,
-              border: '1px solid #ddd',
+              border: '1px solid #F9F5F2',
             }}
           >
-              <Typography variant="subtitle1" sx={{ fontWeight: 400, fontFamily: 'Comic Neue, cursive', color: 'white' }}>
+              <Typography variant="subtitle2" sx={{ fontWeight: 400, fontFamily: 'Fira Sans, sans-serif' }}>
                 {item.heading}
               </Typography>
-              <Typography variant="body2" sx={{ mb: 1, fontFamily: 'Comic Neue, cursive', fontWeight: 300, color: 'white' }}>
+              <Typography variant="caption" sx={{ mb: 1, fontFamily: 'Fira Sans, sans-serif', fontWeight: 400 }}>
                 {item.subheading}
               </Typography>
-              <Typography variant="caption" sx={{ color: 'white' }}>
+              <Typography variant="overline" sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400 }}>
                 Posted on: {new Date(item.postedOn).toLocaleDateString()}
               </Typography>
             </Paper>
