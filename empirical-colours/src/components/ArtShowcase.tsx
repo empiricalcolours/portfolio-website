@@ -71,7 +71,7 @@ const ArtShowcase: React.FC = () => {
   };
 
   return (
-    <Box sx={{ p: 2, backgroundColor: '#FFEFEF' }}>
+    <Box sx={{ p: 2, backgroundColor: '#000000', color: '#FFF4E2' }}>
       <Tabs
         value={selectedGenre}
         onChange={(_, newValue) => setSelectedGenre(newValue)}
@@ -80,7 +80,7 @@ const ArtShowcase: React.FC = () => {
         variant="scrollable"
       >
         {genres.map((genre) => (
-          <Tab key={genre} label={genre.charAt(0).toUpperCase() + genre.slice(1)} sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 400, textTransform: 'uppercase', color: '#6B4E3E' }} />
+          <Tab key={genre} label={genre.charAt(0).toUpperCase() + genre.slice(1)} sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 400, textTransform: 'uppercase', color: '#FFF4E2' }} />
         ))}
       </Tabs>
 
@@ -89,8 +89,8 @@ const ArtShowcase: React.FC = () => {
           <ImageListItem key={item.src} onClick={() => handleOpen(index)} sx={{ cursor: 'pointer' }}>
             <img src={item.src} alt={item.title} loading="lazy" style={{ width: '100%', borderRadius: 8 }} />
             <ImageListItemBar
-              title={<Typography sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 400 }}>{item.title}</Typography>}
-              subtitle={<Typography sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300 }}>{item.description}</Typography>}
+              title={<Typography sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 400, color: '#FFF4E2' }}>{item.title}</Typography>}
+              subtitle={<Typography sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300, color: '#FFF4E2' }}>{item.description}</Typography>}
               position="below"
               sx={{ textAlign: 'center' }}
             />
@@ -100,8 +100,8 @@ const ArtShowcase: React.FC = () => {
 
       <Dialog open={open} onClose={handleClose} fullWidth maxWidth="md">
         {selectedIndex !== null && (
-          <DialogContent sx={{ position: 'relative', p: 2 }}>
-            <IconButton onClick={handleClose} sx={{ position: 'absolute', top: 8, right: 8 }}>
+          <DialogContent sx={{ position: 'relative', p: 2, backgroundColor: '#000000', color: '#FFF4E2' }}>
+            <IconButton onClick={handleClose} sx={{ position: 'absolute', top: 8, right: 8, color: '#FFF4E2' }}>
               <CloseIcon />
             </IconButton>
             <Box
@@ -111,7 +111,7 @@ const ArtShowcase: React.FC = () => {
               justifyContent="center"
               gap={4}
             >
-              <IconButton onClick={handlePrev}>
+              <IconButton onClick={handlePrev} sx={{ color: '#FFF4E2' }}>
                 <ArrowBackIosNewIcon />
               </IconButton>
 
@@ -127,14 +127,14 @@ const ArtShowcase: React.FC = () => {
                 }}
               />
 
-              <IconButton onClick={handleNext}>
+              <IconButton onClick={handleNext} sx={{ color: '#FFF4E2' }}>
                 <ArrowForwardIosIcon />
               </IconButton>
             </Box>
 
             <Box mt={2} textAlign="center">
-              <Typography variant="h6" sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 400 }}>{currentImages[selectedIndex].title}</Typography>
-              <Typography variant="body2" sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300 }}>{currentImages[selectedIndex].description}</Typography>
+              <Typography variant="h6" sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 400, color: '#FFF4E2' }}>{currentImages[selectedIndex].title}</Typography>
+              <Typography variant="body2" sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300, color: '#FFF4E2' }}>{currentImages[selectedIndex].description}</Typography>
             </Box>
           </DialogContent>
         )}
