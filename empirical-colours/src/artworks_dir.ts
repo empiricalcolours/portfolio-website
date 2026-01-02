@@ -32,21 +32,15 @@ interface Announcement {
 export const MyAnnouncements: Announcement[] = [
   {
     id: 1,
-    heading: 'Scheduled Maintenance',
-    subheading: 'We’ll be offline from 10 PM to 12 AM.',
-    postedOn: '2025-06-22',
+    heading: 'Art Workshop - Christmas 2025',
+    subheading: 'Join me for a special holiday art workshop. Reach out for details and registration.',
+    postedOn: '2025-09-22',
   },
   {
     id: 2,
-    heading: 'New Feature Released',
-    subheading: 'You can now follow other users and businesses.',
-    postedOn: '2025-06-20',
-  },
-  {
-    id: 3,
-    heading: 'Update to Privacy Policy',
-    subheading: 'We’ve updated how your data is handled.',
-    postedOn: '2025-06-18',
+    heading: 'Art Blog Coming Soon!',
+    subheading: 'Stay tuned for my upcoming art blog, where I’ll share tips, tutorials, and more.',
+    postedOn: '2025-12-20',
   },
 ];
 
@@ -57,56 +51,41 @@ export const MyAnnouncements: Announcement[] = [
 // You can add subcategory as well, I have sketching, digital, watercolours here for example. 
 export const artworks: Record<string, { src: string; title: string; description: string }[]> = {
   acrylics: [
-    { 
-      src: '/placeholders/1.jpg', 
-      title: 'Graphite Gaze', 
-      description: 'A hand-drawn portrait in pencil.' 
-    },
-     { 
-      src: '/placeholders/a.jpg', 
-      title: 'Golden Sunset', 
-      description: 'Acrylics on Canvas.' 
-    },
-    { 
-      src: '/placeholders/2.jpg', 
-      title: 'Abstract Lines', 
-      description: 'Minimalist sketch of geometry.' },
+    { src: '/ruduart/another house.JPG', title: 'Another House', description: 'Acrylic study.' },
+    { src: '/ruduart/brick wall.JPG', title: 'Brick Wall', description: 'Textured acrylic work.' },
+    { src: '/ruduart/dream house.JPG', title: 'Dream House', description: 'Vibrant architectural piece.' },
+    { src: '/ruduart/forest.JPG', title: 'Forest', description: 'Acrylic landscape.' },
+    { src: '/ruduart/house in a forest.JPG', title: 'House in a Forest', description: 'Serene forest dwelling.' },
+    { src: '/ruduart/house on the rocks.JPG', title: 'House on the Rocks', description: 'Coastal architecture.' },
+    { src: '/ruduart/house.JPG', title: 'House', description: 'Simple architectural study.' },
+    { src: '/ruduart/i live here.JPG', title: 'I Live Here', description: 'Personal architectural perspective.' },
+    { src: '/ruduart/sunset in forest.JPG', title: 'Sunset in Forest', description: 'Golden hour in the woods.' },
   ],
   digital: [
-    { 
-      src: '/placeholders/1.jpg', 
-      title: 'Futuristic City', 
-      description: 'A neon-lit cityscape.' 
-    },
-    { 
-      src: '/placeholders/2.jpg', 
-      title: 'Cyber Portrait', 
-      description: 'A character in sci-fi setting.' 
-    },
+    { src: '/ruduart/Iridescent.jpg', title: 'Iridescent', description: 'Digital light exploration.' },
+    { src: '/ruduart/Runaway.jpg', title: 'Runaway', description: 'Dynamic digital composition.' },
+    { src: '/ruduart/vexed.jpg', title: 'Vexed', description: 'Digital portrait study.' },
+    { src: '/ruduart/idk what this is.JPG', title: 'Mystery Composition', description: 'Abstract digital experiment.' },
+    { src: '/ruduart/me in my head.JPG', title: 'Me In My Head', description: 'Introspective digital piece.' },
   ],
   watercolors: [
-    { 
-      src: '/placeholders/b.jpg', 
-      title: 'Cat in a starry night', 
-      description: 'Inspired by Van Gogh.' 
-    },
-    { 
-      src: '/placeholders/c.jpg', 
-      title: 'Autumn Leaves', 
-      description: 'Watercolor impression of fall.' 
-    },
+    { src: '/ruduart/starry starry cat.jpeg', title: 'Starry Starry Cat', description: 'Inspired by Van Gogh.' },
+    { src: '/ruduart/sunset somewhere.JPG', title: 'Sunset Somewhere', description: 'Watercolor horizon lines.' },
+    { src: '/ruduart/trees by a lake.JPG', title: 'Trees by a Lake', description: 'Calm watercolor reflection.' },
+    { src: '/ruduart/random trees.JPG', title: 'Random Trees', description: 'Watercolor nature study.' },
+    { src: '/ruduart/walk into the woods.jpg', title: 'Walk Into the Woods', description: 'Watercolor forest path.' },
+    { src: '/ruduart/outlining the sunset.jpg', title: 'Outlining the Sunset', description: 'Sketchy watercolor study.' },
   ],
   Charcoal: [
-    { 
-      src: '/placeholders/b.jpg', 
-      title: 'Cat in a starry night', 
-      description: 'Inspired by Van Gogh.' 
-    },
-    { 
-      src: '/placeholders/c.jpg', 
-      title: 'Autumn Leaves', 
-      description: 'Watercolor impression of fall.' 
-    },
+    { src: '/ruduart/pencil sketch.jpeg', title: 'Pencil Sketch', description: 'Graphite portrait study.' },
+    { src: '/ruduart/pencil sketch part 2.jpeg', title: 'Pencil Sketch Part 2', description: 'Detailed graphite work.' },
+    { src: '/ruduart/The Lawyer.jpg', title: 'The Lawyer', description: 'Character study.' },
+    { src: '/ruduart/doggies say hi.JPG', title: 'Doggies Say Hi', description: 'Playful animal sketch.' },
+    { src: '/ruduart/doggy says buy.JPG', title: 'Doggy Says Buy', description: 'Whimsical character sketch.' },
+    { src: '/ruduart/doggy says hi.JPG', title: 'Doggy Says Hi', description: 'Friendly animal portrait.' },
+    { src: '/ruduart/i like cats.jpeg', title: 'I Like Cats', description: 'Graphite cat study.' },
+    { src: '/ruduart/me in a forest.jpeg', title: 'Me in a Forest', description: 'Self-portrait in nature.' },
+    { src: '/ruduart/my wall.jpeg', title: 'My Wall', description: 'Sketch of a personal space.' },
   ],
 };
 
@@ -114,10 +93,12 @@ export const artworks: Record<string, { src: string; title: string; description:
 // same as the art showcase, upload the images in "public" folder or a folder inside public folder
 // and update the file names below.
 export const slideshow_images = [
-  '/placeholders/a.jpg',
-  '/placeholders/b.jpg',
-  '/placeholders/1.jpg',
-  '/placeholders/2.jpg',
+  '/ruduart/outlining the sunset.jpg',
+  '/ruduart/walk into the woods.jpg',
+  '/ruduart/starry starry cat.jpeg',
+  '/ruduart/Runaway.jpg',
+  '/ruduart/dream house.JPG',
+  '/ruduart/The Lawyer.jpg',
 ];
 
 
