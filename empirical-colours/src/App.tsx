@@ -4,6 +4,7 @@ import MainPage from './components/MainPage';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import './App.css';
 import { CssBaseline } from '@mui/material';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
           <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
       </Router>
+      <SpeedInsights />
     </>
   );
 };
