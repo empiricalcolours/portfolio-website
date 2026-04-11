@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import MainPage from './components/MainPage';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import './App.css';
@@ -15,6 +16,7 @@ const App: React.FC = () => {
           <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
       </Router>
+      <Analytics />
     </>
   );
 };
