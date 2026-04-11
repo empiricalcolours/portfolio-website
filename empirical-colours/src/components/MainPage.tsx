@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Navbar from './Navbar';
 import Slideshow from './Slideshow';
 import Footer from './Footer';
@@ -7,10 +8,25 @@ import ArtShowcase from './ArtShowcase';
 import Contact from './Contact';
 import AboutMe from './AboutMe';
 import PaintCanvas from './PaintCanvas';
+import BlogSection from './BlogSection';
 import '../App.css';
 import { CssBaseline, Box } from '@mui/material';
 
 const MainPage: React.FC = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <CssBaseline />
@@ -23,6 +39,9 @@ const MainPage: React.FC = () => {
         <ArtShowcase />
       </Box>
       <AboutMe />
+      <Box id="blogs">
+        <BlogSection />
+      </Box>
       <Box id="contact">
         <Contact />
       </Box>
