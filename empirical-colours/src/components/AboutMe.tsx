@@ -53,7 +53,7 @@ const AboutMe: React.FC = () => {
           <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
             <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
               <MdEmail size={18} style={{ marginRight: '8px' }} />
-              <Typography variant="caption" sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 300 }}>
+              <Typography variant="caption" sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400 }}>
                 {email}
               </Typography>
             </Box>
@@ -64,7 +64,7 @@ const AboutMe: React.FC = () => {
                 target="_blank"
                 rel="noopener"
                 underline="hover"
-                sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 300, fontSize: '0.75rem' }}
+                sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400, fontSize: '0.75rem' }}
               >
                 {instagramHandle}
               </Link>
@@ -85,16 +85,16 @@ const AboutMe: React.FC = () => {
           </Grid>
           <Grid item xs={12} md={7} container direction="column" justifyContent="space-between">
             <Grid item>
-              <Typography variant="h2" sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 700 }}>
+              <Typography variant="h2" sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400 }}>
                 {name}
               </Typography>
-              <Typography variant="h5" sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 300 }}>
+              <Typography variant="h5" sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400 }}>
                 {welcomingLine}
               </Typography>
             </Grid>
           </Grid>
         </Grid>
-        <Typography variant="body1" gutterBottom sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300, mt: 2 }}>
+        <Typography variant="body1" gutterBottom sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400, mt: 2 }}>
           {description}
         </Typography>
       </Paper>

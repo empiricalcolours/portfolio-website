@@ -93,6 +93,8 @@ export const artworks: Record<string, { src: string; title: string; description:
 // same as the art showcase, upload the images in "public" folder or a folder inside public folder
 // and update the file names below.
 export const slideshow_images = [
+  '/ruduart/The Lawyer slideshow.jpg',
+  '/ruduart/badge.jpeg',
   '/ruduart/outlining the sunset.jpg',
   '/ruduart/walk into the woods.jpg',
   '/ruduart/starry starry cat.jpeg',

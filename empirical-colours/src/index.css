@@ -1,8 +1,8 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap');
 @import './assets/fonts.css';
 
 :root {
-  font-family: 'Mulegh', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 

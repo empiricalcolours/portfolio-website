@@ -23,10 +23,10 @@ const PrivacyPolicy: React.FC = () => {
           backgroundColor: 'white',
         }}
       >
-        <Typography variant="h4" gutterBottom sx={{ fontWeight: 400, fontFamily: 'Comic Neue, cursive' }}>
+        <Typography variant="h4" gutterBottom sx={{ fontWeight: 400, fontFamily: 'Fira Sans, sans-serif' }}>
           Privacy Policy
         </Typography>
-        <Typography variant="body1" gutterBottom sx={{ fontFamily: 'Comic Neue, cursive', fontWeight: 300 }}>
+        <Typography variant="body1" gutterBottom sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400 }}>
           This is a placeholder for the Privacy Policy.
         </Typography>
       </Paper>
