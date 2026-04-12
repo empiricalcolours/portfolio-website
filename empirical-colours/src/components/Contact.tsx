@@ -44,7 +44,7 @@ const ContactForm: React.FC = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'linear-gradient(to bottom, #66768F 50%, #FFF4E2 50%)',
+        background: 'linear-gradient(to bottom, #66768F 50%, #F9F5F2 50%)',
         p: 2,
         py: 8,
       }}
