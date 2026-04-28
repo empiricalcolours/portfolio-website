@@ -89,8 +89,8 @@ const ArtShowcase: React.FC = () => {
           <ImageListItem key={item.src} onClick={() => handleOpen(index)} sx={{ cursor: 'pointer' }}>
             <img src={item.src} alt={item.title} loading="lazy" style={{ width: '100%', borderRadius: 8 }} />
             <ImageListItemBar
-              title={<Typography sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400, color: '#FFF4E2' }}>{item.title}</Typography>}
-              subtitle={<Typography sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400, color: '#FFF4E2' }}>{item.description}</Typography>}
+              title={<Typography sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400, color: '#FFF4E2', fontSize: '1rem' }}>{item.title}</Typography>}
+              subtitle={<Typography sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400, color: '#CCCCCC', fontSize: '0.875rem', mt: 0.5, fontStyle: 'italic', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{item.description.split('\n')[0]}{item.description.includes('\n') ? '...' : ''}</Typography>}
               position="below"
               sx={{ textAlign: 'center' }}
             />
@@ -98,10 +98,10 @@ const ArtShowcase: React.FC = () => {
         ))}
       </ImageList>
 
-      <Dialog open={open} onClose={handleClose} fullWidth maxWidth="md">
+      <Dialog open={open} onClose={handleClose} fullWidth maxWidth="lg">
         {selectedIndex !== null && (
-          <DialogContent sx={{ position: 'relative', p: 2, backgroundColor: '#000000', color: '#FFF4E2' }}>
-            <IconButton onClick={handleClose} sx={{ position: 'absolute', top: 8, right: 8, color: '#FFF4E2' }}>
+          <DialogContent sx={{ position: 'relative', p: 4, backgroundColor: '#F9F5F2', color: '#2C2C2C' }}>
+            <IconButton onClick={handleClose} sx={{ position: 'absolute', top: 8, right: 8, color: '#2C2C2C' }}>
               <CloseIcon />
             </IconButton>
             <Box
@@ -111,7 +111,7 @@ const ArtShowcase: React.FC = () => {
               justifyContent="center"
               gap={4}
             >
-              <IconButton onClick={handlePrev} sx={{ color: '#FFF4E2' }}>
+              <IconButton onClick={handlePrev} sx={{ color: '#2C2C2C' }}>
                 <ArrowBackIosNewIcon />
               </IconButton>
 
@@ -120,21 +120,21 @@ const ArtShowcase: React.FC = () => {
                 src={currentImages[selectedIndex].src}
                 alt={currentImages[selectedIndex].title}
                 sx={{
-                  maxHeight: 400,
+                  maxHeight: '60vh',
                   maxWidth: '100%',
                   objectFit: 'contain',
                   borderRadius: 2,
                 }}
               />
 
-              <IconButton onClick={handleNext} sx={{ color: '#FFF4E2' }}>
+              <IconButton onClick={handleNext} sx={{ color: '#2C2C2C' }}>
                 <ArrowForwardIosIcon />
               </IconButton>
             </Box>
 
-            <Box mt={2} textAlign="center">
-              <Typography variant="h6" sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400, color: '#FFF4E2' }}>{currentImages[selectedIndex].title}</Typography>
-              <Typography variant="body2" sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400, color: '#FFF4E2' }}>{currentImages[selectedIndex].description}</Typography>
+            <Box mt={3} textAlign="center">
+              <Typography variant="h6" sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 500, color: '#2C2C2C', fontSize: '1.25rem' }}>{currentImages[selectedIndex].title}</Typography>
+              <Typography variant="body2" sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400, color: '#555555', fontSize: '1rem', mt: 1, whiteSpace: 'pre-line', fontStyle: 'italic' }}>{currentImages[selectedIndex].description}</Typography>
             </Box>
           </DialogContent>
         )}

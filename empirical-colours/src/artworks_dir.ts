@@ -51,15 +51,18 @@ export const MyAnnouncements: Announcement[] = [
 // You can add subcategory as well, I have sketching, digital, watercolours here for example. 
 export const artworks: Record<string, { src: string; title: string; description: string }[]> = {
   acrylics: [
-    { src: '/ruduart/another house.JPG', title: 'Another House', description: 'Acrylic study.' },
-    { src: '/ruduart/brick wall.JPG', title: 'Brick Wall', description: 'Textured acrylic work.' },
-    { src: '/ruduart/dream house.JPG', title: 'Dream House', description: 'Vibrant architectural piece.' },
-    { src: '/ruduart/forest.JPG', title: 'Forest', description: 'Acrylic landscape.' },
-    { src: '/ruduart/house in a forest.JPG', title: 'House in a Forest', description: 'Serene forest dwelling.' },
-    { src: '/ruduart/house on the rocks.JPG', title: 'House on the Rocks', description: 'Coastal architecture.' },
-    { src: '/ruduart/house.JPG', title: 'House', description: 'Simple architectural study.' },
-    { src: '/ruduart/i live here.JPG', title: 'I Live Here', description: 'Personal architectural perspective.' },
-    { src: '/ruduart/sunset in forest.JPG', title: 'Sunset in Forest', description: 'Golden hour in the woods.' },
+    { src: '/ruduart/A Long Afternoon.JPG', title: 'A Long Afternoon', description: `Acrylic on Canvas | A4\n(Sold)` },
+    { src: '/ruduart/A Place to Breathe.JPG', title: 'A Place to Breathe', description: `Acrylic on Wooden Panel | 18 × 12”\n(Sold)` },
+    { src: '/ruduart/Enchantment.JPG', title: 'Enchantment', description: `Acrylic on Canvas | A4\nRs. 7,000 — [Available]` },
+    { src: '/ruduart/Golden Sunset.JPG', title: 'Golden Sunset', description: `Acrylic on Canvas | A5\n(Sold)` },
+    { src: '/ruduart/Interstellar.JPG', title: 'Interstellar', description: `Acrylic on Canvas | A4\nRs. 10,000 — [Available]` },
+    { src: '/ruduart/New York City.JPG', title: 'New York City', description: `Acrylic on Canvas | 36 × 24”\nRs. 50,000 — [Available]` },
+    { src: '/ruduart/Runaway.jpg', title: 'Runaway', description: `Acrylic on Canvas | A4\n(Sold)` },
+    { src: '/ruduart/Solitude\'s sunset.JPG', title: 'Solitude\'s sunset', description: `Acrylic on Wooden Panel | 22 × 17”\nRs. 25,000 — [Available]` },
+    { src: '/ruduart/Standing Quiet.JPG', title: 'Standing Quiet', description: `Acrylic on Canvas | A3\nRs. 10,000 — [Available]` },
+    { src: '/ruduart/Starry Starry Cat.JPG', title: 'Starry Starry Cat', description: `Acrylic on Canvas | 12 × 12”\n(Sold)` },
+    { src: '/ruduart/The Lawyer.jpg', title: 'The Lawyer', description: `Acrylic on Paper | A3\n(Sold)` },
+    { src: '/ruduart/Walk in the Forest.jpeg', title: 'Walk in the Forest', description: `Acrylic on Wooden Panel | 6 × 6”\n(Sold)` },
   ],
   digital: [
     { src: '/ruduart/Iridescent.jpg', title: 'Iridescent', description: 'Digital light exploration.' },
