@@ -72,12 +72,22 @@ export const artworks: Record<string, { src: string; title: string; description:
     { src: '/ruduart/me in my head.JPG', title: 'Me In My Head', description: 'Introspective digital piece.' },
   ],
   watercolors: [
-    { src: '/ruduart/starry starry cat.jpeg', title: 'Starry Starry Cat', description: 'Inspired by Van Gogh.' },
-    { src: '/ruduart/sunset somewhere.JPG', title: 'Sunset Somewhere', description: 'Watercolor horizon lines.' },
-    { src: '/ruduart/trees by a lake.JPG', title: 'Trees by a Lake', description: 'Calm watercolor reflection.' },
-    { src: '/ruduart/random trees.JPG', title: 'Random Trees', description: 'Watercolor nature study.' },
-    { src: '/ruduart/walk into the woods.jpg', title: 'Walk Into the Woods', description: 'Watercolor forest path.' },
-    { src: '/ruduart/outlining the sunset.jpg', title: 'Outlining the Sunset', description: 'Sketchy watercolor study.' },
+    { src: '/watercolours/Street Houses.JPG', title: 'Street Houses', description: 'Watercolour on paper | 3 × 4 | Not for Sale' },
+    { src: '/watercolours/A Still Address.JPG', title: 'A Still Address', description: 'Watercolour on paper | A5 | Not for Sale' },
+    { src: '/watercolours/Aaji.JPG', title: 'Aaji', description: 'Watercolour on paper | 10 × 10 | Not for Sale' },
+    { src: '/watercolours/Hakuna matata.JPG', title: 'Hakuna matata', description: 'Watercolour on paper | 6 × 6 | Not for Sale' },
+    { src: '/watercolours/Standing in Silence.JPG', title: 'Standing in Silence', description: 'Watercolour on paper | A5 | Not for Sale' },
+    { src: '/watercolours/Blue Beetle.jpeg', title: 'Blue Beetle', description: 'Watercolour on paper | A5 | Not for Sale' },
+    { src: '/watercolours/Dwelling.JPG', title: 'Dwelling', description: 'Watercolour on paper | A5 | Not for Sale' },
+    { src: '/watercolours/Gokhale Hall, Pune.JPG', title: 'Gokhale Hall, Pune', description: 'Watercolour on paper | A5 | Not for Sale' },
+    { src: '/watercolours/Sunset.JPG', title: 'Sunset', description: 'Watercolour on paper | A5 | Not for Sale' },
+    { src: '/watercolours/Random.JPG', title: 'Random', description: 'Watercolour on paper | 3 × 4 | Not for Sale' },
+    { src: '/watercolours/Pupcorn.JPG', title: 'Pupcorn', description: 'Watercolour on paper | 3 × 4 | Not for Sale' },
+    { src: '/watercolours/The Gardener.JPG', title: 'The Gardener', description: 'Watercolour on paper | 3 × 4 | Not for Sale' },
+    { src: '/watercolours/The Long Way Back.JPG', title: 'The Long Way Back', description: 'Watercolour on paper | A5 | Not for Sale' },
+    { src: '/watercolours/Trees from ILS.JPG', title: 'Trees from ILS', description: 'Watercolour on paper | A5 | Not for Sale' },
+    { src: '/watercolours/Where the Road Ends.JPG', title: 'Where the Road Ends', description: 'Watercolour on paper | A4 | Not for Sale' },
+    { src: '/watercolours/Vadakkumnathan Temple, Thrissur.JPG', title: 'Vadakkumnathan Temple, Thrissur', description: 'Watercolour on paper | 3 × 4 | Not for Sale' },
   ],
   Charcoal: [
     { src: '/ruduart/pencil sketch.jpeg', title: 'Pencil Sketch', description: 'Graphite portrait study.' },
@@ -96,14 +106,9 @@ export const artworks: Record<string, { src: string; title: string; description:
 // same as the art showcase, upload the images in "public" folder or a folder inside public folder
 // and update the file names below.
 export const slideshow_images = [
-  '/ruduart/The Lawyer slideshow.jpg',
-  '/ruduart/badge.jpeg',
-  '/ruduart/outlining the sunset.jpg',
-  '/ruduart/walk into the woods.jpg',
-  '/ruduart/starry starry cat.jpeg',
-  '/ruduart/Runaway.jpg',
-  '/ruduart/dream house.JPG',
-  '/ruduart/The Lawyer.jpg',
+  '/slides/compilation.png',
+  '/slides/Ny zoomed.jpeg',
+  '/slides/live.png',
 ];
 
 

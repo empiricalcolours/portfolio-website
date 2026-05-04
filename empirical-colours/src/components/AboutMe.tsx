@@ -68,11 +68,11 @@ const AboutMe: React.FC = () => {
           {/* Right Side: Content */}
           <Grid item xs={12} md={7}>
             <Box sx={{ mb: 4 }}>
-              <Typography 
-                variant="h2" 
-                sx={{ 
-                  fontFamily: 'Mulegh, sans-serif', 
-                  fontWeight: 400, 
+              <Typography
+                variant="h2"
+                sx={{
+                  fontFamily: 'Mulegh, sans-serif',
+                  fontWeight: 400,
                   mb: 2,
                   fontSize: { xs: '3rem', md: '4.5rem' },
                   letterSpacing: '-0.02em',
@@ -80,7 +80,7 @@ const AboutMe: React.FC = () => {
               >
                 Hi, I'm {name}.
               </Typography>
-              
+
               <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 10, mb: 4, opacity: 0.8 }}>
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
                   <MdEmail size={20} style={{ marginRight: '12px' }} />
@@ -103,10 +103,10 @@ const AboutMe: React.FC = () => {
               </Box>
             </Box>
 
-            <Box 
-              sx={{ 
-                fontFamily: 'Fira Sans, sans-serif', 
-                fontWeight: 400, 
+            <Box
+              sx={{
+                fontFamily: 'Fira Sans, sans-serif',
+                fontWeight: 400,
                 fontSize: { xs: '0.9rem', md: '1rem' },
                 lineHeight: 1.8,
                 display: 'flex',
@@ -121,7 +121,7 @@ const AboutMe: React.FC = () => {
                 If you’ve somehow landed on this tiny corner of the internet… I already like you. You’ve got taste.
               </Typography>
               <Typography variant="body1" sx={{ fontFamily: 'inherit', fontSize: 'inherit', fontWeight: 'inherit', lineHeight: 'inherit' }}>
-                So, hi. I’m an artist just out here painting my way through life. I love experimenting, messing things up, starting again— and somewhere in that process, something real comes out. 
+                So, hi. I’m an artist just out here painting my way through life. I love experimenting, messing things up, starting again— and somewhere in that process, something real comes out.
                 I usually paint when words aren’t enough.
               </Typography>
               <Typography variant="body1" sx={{ fontFamily: 'inherit', fontSize: 'inherit', fontWeight: 'inherit', lineHeight: 'inherit' }}>
