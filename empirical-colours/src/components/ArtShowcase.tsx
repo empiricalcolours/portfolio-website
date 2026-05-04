@@ -87,7 +87,7 @@ const ArtShowcase: React.FC = () => {
       <ImageList variant="masonry" cols={isMobile ? 1 : 4} gap={16} sx={{ mt: 2 }}>
         {currentImages.map((item, index) => (
           <ImageListItem key={item.src} onClick={() => handleOpen(index)} sx={{ cursor: 'pointer' }}>
-            <img src={item.src} alt={item.title} loading="lazy" style={{ width: '100%', borderRadius: 8 }} />
+            <img src={item.src} alt={item.title} loading="lazy" style={{ width: '100%', aspectRatio: '1 / 1', objectFit: 'cover', borderRadius: 8 }} />
             <ImageListItemBar
               title={<Typography sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400, color: '#FFF4E2', fontSize: '1rem' }}>{item.title}</Typography>}
               subtitle={<Typography sx={{ fontFamily: 'Fira Sans, sans-serif', fontWeight: 400, color: '#CCCCCC', fontSize: '0.875rem', mt: 0.5, fontStyle: 'italic', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{item.description.split('\n')[0]}{item.description.includes('\n') ? '...' : ''}</Typography>}

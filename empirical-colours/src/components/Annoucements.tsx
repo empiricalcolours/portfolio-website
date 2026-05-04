@@ -33,9 +33,9 @@ import { MyAnnouncements } from '../artworks_dir';
 
 const Announcements: React.FC = () => {
   return (
-    <Box sx={{ backgroundColor: '#2C2C2C', py: 2 }}>
+    <Box sx={{ backgroundColor: '#F9F5F2', py: 2 }}>
       <Box sx={{ maxWidth: 800, marginRight: 'auto', paddingLeft: '20px' }}>
-        <Typography variant="h6" gutterBottom sx={{ fontWeight: 400, color: '#F9F5F2', fontFamily: 'Fira Sans, sans-serif' }}>
+        <Typography variant="h6" gutterBottom sx={{ fontWeight: 400, color: '#2C2C2C', fontFamily: 'Fira Sans, sans-serif' }}>
           ANNOUNCEMENTS
         </Typography>
 
@@ -46,16 +46,16 @@ const Announcements: React.FC = () => {
             elevation={0}
             sx={{
               p: 2,
-              backgroundColor: '#2C2C2C',
-              color: '#F9F5F2',
+              backgroundColor: '#F9F5F2',
+              color: '#2C2C2C',
               transition: 'background-color 0.3s ease, color 0.3s ease',
               '&:hover': {
-                backgroundColor: '#F9F5F2',
-                color: '#2C2C2C',
-                '* ': { color: '#2C2C2C' }
+                backgroundColor: '#2C2C2C',
+                color: '#F9F5F2',
+                '* ': { color: '#F9F5F2' }
               },
               borderRadius: 2,
-              border: '1px solid #F9F5F2',
+              border: '1px solid #2C2C2C',
             }}
           >
               <Typography variant="subtitle2" sx={{ fontWeight: 400, fontFamily: 'Fira Sans, sans-serif' }}>
