@@ -9,6 +9,7 @@ import Contact from './Contact';
 import AboutMe from './AboutMe';
 import PaintCanvas from './PaintCanvas';
 import BlogSection from './BlogSection';
+import HowToBuy from './HowToBuy';
 import '../App.css';
 import { CssBaseline, Box } from '@mui/material';
 
@@ -38,6 +39,7 @@ const MainPage: React.FC = () => {
       <Box id="art">
         <ArtShowcase />
       </Box>
+      <HowToBuy />
       <AboutMe />
       <Box id="blogs">
         <BlogSection />

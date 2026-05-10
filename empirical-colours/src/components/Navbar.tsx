@@ -21,10 +21,10 @@ const Navbar: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Label and target id
   const navItems = [
     { label: 'Home', targetId: 'home' },
     { label: 'My Art', targetId: 'art' },
+    { label: 'How to Buy', targetId: 'how-to-buy' },
     { label: 'About Me', targetId: 'about-me' },
     { label: 'Blogs', targetId: 'blogs' },
     { label: 'Contact', targetId: 'contact' },
