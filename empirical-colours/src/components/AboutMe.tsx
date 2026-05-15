@@ -118,22 +118,18 @@ const AboutMe: React.FC = () => {
               }}
             >
               <Typography variant="body1" sx={{ fontFamily: 'inherit', fontSize: 'inherit', fontWeight: 'inherit', lineHeight: 'inherit' }}>
-                If you’ve somehow landed on this tiny corner of the internet… I already like you. You’ve got taste.
+                If you’ve somehow landed on this tiny corner of the internet… I already like you. <br/>
+                I am an artist who likes to experiment and paint and get distracted and sleep and paint and listen music and eat and read and paint. That sounds absurd for a visitor to read. I will rewrite it some other day, but this is the truth for now.
               </Typography>
               <Typography variant="body1" sx={{ fontFamily: 'inherit', fontSize: 'inherit', fontWeight: 'inherit', lineHeight: 'inherit' }}>
-                So, hi. I’m an artist just out here painting my way through life. I love experimenting, messing things up, starting again— and somewhere in that process, something real comes out.
-                I usually paint when words aren’t enough.
+                Also, I’m trying to live a little kinder to the planet, so you’ll spot a bunch of recycled and sustainable art sneaking into my work 🌱
               </Typography>
               <Typography variant="body1" sx={{ fontFamily: 'inherit', fontSize: 'inherit', fontWeight: 'inherit', lineHeight: 'inherit' }}>
-                Also, I’m trying to live a little kinder to the planet, so you’ll spot a bunch of recycled and sustainable art sneaking into my work and blogs 🌱
-              </Typography>
-              <Typography variant="body1" sx={{ fontFamily: 'inherit', fontSize: 'inherit', fontWeight: 'inherit', lineHeight: 'inherit' }}>
-                Take your time scrolling through my art. Stay as long as you want. And if something makes you feel anything, tell me. I’d love to hear your thoughts.
-                If you’re looking to buy something, collaborate, or just say hi, my inbox is always open (seriously, don’t be shy).
+                Take your time scrolling through my work. And if you like something or hate it let me know. I’d love to hear your thoughts. If you’re looking to buy something, collaborate, or just say hi, my inbox is always open (seriously, don’t be shy).
               </Typography>
 
               <Typography variant="body1" sx={{ fontFamily: 'inherit', fontSize: 'inherit', fontWeight: 'inherit', lineHeight: 'inherit' }}>
-                And if you’re up for a little extra chaos, head over to my blog. That’s where I share unfiltered thoughts on life, along with behind-the-scenes mess, raw ideas, and half-baked motivations that quietly (or loudly) fuel my art.
+                And if you’re up for a little extra chaos, head over to my blog. That’s where I share unfiltered thoughts on life, along with behind-the-scenes mess, raw ideas, and some half-baked motivations along with some seditious opinions.
               </Typography>
             </Box>
           </Grid>
