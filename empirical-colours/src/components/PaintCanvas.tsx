@@ -13,6 +13,9 @@ const PaintCanvas: React.FC = () => {
   const [trail, setTrail] = useState<TrailPoint[]>([]);
 
   useEffect(() => {
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    if (isTouchDevice) return;
+
     const handleMouseMove = (e: MouseEvent) => {
       setTrail(prev => [
         ...prev,
