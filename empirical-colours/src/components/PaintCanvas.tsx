@@ -13,9 +13,6 @@ const PaintCanvas: React.FC = () => {
   const [trail, setTrail] = useState<TrailPoint[]>([]);
 
   useEffect(() => {
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    if (isTouchDevice) return;
-
     const handleMouseMove = (e: MouseEvent) => {
       setTrail(prev => [
         ...prev,
@@ -28,19 +25,19 @@ const PaintCanvas: React.FC = () => {
   }, []);
 
   return (
-    <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none' }}>
+    <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 99999 }}>
       {trail.map((point, idx) => (
         <div
           key={idx}
           style={{
             position: 'absolute',
-            left: point.x - 5,
-            top: point.y - 5,
+            left: point.x,
+            top: point.y,
             width: 10,
             height: 10,
             borderRadius: '50%',
             backgroundColor: point.color,
-            opacity: 1 - idx / 20,
+            opacity: (idx + 1) / trail.length,
             transition: 'opacity 0.2s, transform 0.2s',
             transform: `translate(-50%, -50%)`,
           }}
