@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import MainPage from './components/MainPage';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import BlogPost from './components/BlogPost';
@@ -17,6 +18,7 @@ const App: React.FC = () => {
           <Route path="/blog/:id" element={<BlogPost />} />
         </Routes>
       </Router>
+      <Analytics />
     </>
   );
 };
