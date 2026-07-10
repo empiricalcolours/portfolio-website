@@ -5,6 +5,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import BlogPost from './components/BlogPost';
 import './App.css';
 import { CssBaseline } from '@mui/material';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
           <Route path="/blog/:id" element={<BlogPost />} />
         </Routes>
       </Router>
+      <SpeedInsights />
     </>
   );
 };
